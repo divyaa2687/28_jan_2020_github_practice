@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-		features= "Feature"
-		,glue= {"step_definition"}
+@CucumberOptions(plugin={"json:target/cucumber.json"})
+		//features= "Feature"
+		//,glue= {"step_definition"}
 		
-		)
+		)//
 
 public class Testrunner {
 
